@@ -25,12 +25,12 @@
 
   {{#if posts.length}}
     <div class='col-md-6 post-list'>
-      <h3>Current posts:</h3>
+      <h3>Your posts:</h3>
 
       {{#each posts as |post|}}
         <div class='row mb-2'>
           <div class='col-md-8'>
-            <h4><a href='/post/{{post.id}}'>{{post.title}}</a></h4>
+            <h4><a href='/edit/post/{{post.id}}'>{{post.title}}</a></h4>
           </div>
           <div class='col-md-4'>
             <button
@@ -38,6 +38,7 @@
               data-id='{{post.id}}'
             >DELETE</button>
           </div>
+          {{! add edit button; can send user to new handlebar }}
         </div>
       {{/each}}
     </div>

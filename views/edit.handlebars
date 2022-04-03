@@ -2,15 +2,12 @@
   <h1>{{title}}</h1>
   <p>{{description}}</p>
   <p>Created by {{user.name}} on {{format_date date_created}}</p>
-
-  <h3>Comments:</h3>
-  <div>
-  {{#each comments as |comment|}}
-    <div>{{comment.title}}</div>
-  <p>Created by {{user.name}} on {{format_date date_created}}</p>
-  {{/each}} 
-  </div>
-</div>
+<div class='col-md-4'>
+            <button
+              class='btn btn-sm btn-danger delete-post'
+              data-id='{{post.id}}'
+            >DELETE</button>
+          </div>
 
 
 {{! add form to create new comment. move comment }}
@@ -29,4 +26,4 @@
       </div>
     </form>
   </div>
-<script src='../js/comment.js'></script>
+<script src='./../public/js/edit.js'></script>

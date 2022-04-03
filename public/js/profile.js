@@ -25,7 +25,7 @@ const delButtonHandler = async (event) => {
   if (event.target.hasAttribute('data-id')) {
     const id = event.target.getAttribute('data-id');
 
-    const response = await fetch(`/api/posts/${id}`, {
+    const response = await fetch(`/api/post/${id}`, {
       method: 'DELETE',
     });
 
@@ -36,10 +36,12 @@ const delButtonHandler = async (event) => {
     }
   }
 };
-
-document
-  .querySelector('.post-list')
-  .addEventListener('click', delButtonHandler);
+let postList = document.querySelector('.post-list');
+if (postList) {
+  document
+    .querySelector('.post-list')
+    .addEventListener('click', delButtonHandler);
+}
 
 document
   .querySelector('.new-post-form')
