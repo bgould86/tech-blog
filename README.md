@@ -35,4 +35,4 @@ If you have any questions, please contact:
 ## Links
 
 - Here is the repo: [https://github.com/bgould86/tech-blog](https://github.com/bgould86/tech-blog)
-- Here is the deployed app: [https://www.youtube.com/watch?v=JBBfY5smy2k](https://www.youtube.com/watch?v=JBBfY5smy2k)
+- Here is the deployed app: [https://tech-blog-bdg.herokuapp.com/](https://tech-blog-bdg.herokuapp.com/)
